@@ -1175,4 +1175,67 @@
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
+  <circuit name="BComparator">
+    <a name="circuit" val="BComparator"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(430,150)" to="(430,220)"/>
+    <wire from="(380,220)" to="(380,290)"/>
+    <wire from="(380,220)" to="(430,220)"/>
+    <wire from="(380,150)" to="(430,150)"/>
+    <wire from="(140,190)" to="(190,190)"/>
+    <wire from="(370,120)" to="(370,130)"/>
+    <wire from="(380,200)" to="(380,220)"/>
+    <wire from="(380,130)" to="(380,150)"/>
+    <wire from="(180,90)" to="(180,170)"/>
+    <wire from="(190,110)" to="(190,190)"/>
+    <wire from="(260,100)" to="(370,100)"/>
+    <wire from="(260,190)" to="(370,190)"/>
+    <wire from="(270,170)" to="(370,170)"/>
+    <wire from="(180,170)" to="(220,170)"/>
+    <wire from="(140,90)" to="(180,90)"/>
+    <wire from="(180,90)" to="(220,90)"/>
+    <wire from="(260,180)" to="(300,180)"/>
+    <wire from="(190,110)" to="(220,110)"/>
+    <wire from="(190,190)" to="(220,190)"/>
+    <wire from="(400,110)" to="(490,110)"/>
+    <wire from="(400,180)" to="(490,180)"/>
+    <wire from="(260,110)" to="(270,110)"/>
+    <wire from="(300,120)" to="(300,180)"/>
+    <wire from="(270,110)" to="(270,170)"/>
+    <wire from="(300,120)" to="(370,120)"/>
+    <comp lib="0" loc="(140,90)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(490,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="blt"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(490,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="beq"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(140,190)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(380,290)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="label" val="bun"/>
+    </comp>
+    <comp lib="3" loc="(260,180)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="2" loc="(400,110)" name="Multiplexer"/>
+    <comp lib="2" loc="(400,180)" name="Multiplexer"/>
+    <comp lib="3" loc="(260,100)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+  </circuit>
 </project>
